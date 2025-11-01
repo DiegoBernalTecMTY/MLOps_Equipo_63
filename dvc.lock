@@ -1,8 +1,7 @@
 schema: '2.0'
 stages:
   prepare:
-    cmd: python mlops_equipo_63/prepare.py data/raw/online_news_modified.csv 
-      data/processed/online_news_clean.csv
+    cmd: "python mlops_equipo_63/prepare.py data/raw/online_news_modified.csv data/processed/online_news_clean.csv\n"
     deps:
     - path: data/raw/online_news_modified.csv
       hash: md5
